@@ -13,5 +13,5 @@ namespace TestApiServer.Persistence.Dto.ProductCategory.Commands
             RuleFor(x=>x.Name).NotEmpty().MaximumLength(MaxLengthName);
             RuleFor(x=>x.Description).NotEmpty().MaximumLength(MaxLengthDescription);
         }
-    }
+    }    
 }

@@ -114,9 +114,7 @@ namespace TestApiServer.Persistence.Repositories
         {
             var product = await context.Products.SingleOrDefaultAsync(product => product.Id == id)
                                   ?? throw new NotFoundException(nameof(Product), id);
-
             return product;
-
         }
 
 
